@@ -17,7 +17,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.tituloContainer}>
-        <ThemedText type="title">Bem vindo as Terras Intermédias!</ThemedText>
+        <ThemedText type="title">Seja Bem-vindo!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.tituloContainer}>

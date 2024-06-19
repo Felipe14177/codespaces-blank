@@ -19,7 +19,7 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.contentContainer}>
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/1.png')} style={styles.icon} />
-          <Pressable style={styles.button} onPress={() => Linking.openURL('https://wa.me/qr/5D2XL6JUTF74P1')}>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://wa.me/5518998244362')}>
             <ThemedText style={styles.text}>Whatsapp</ThemedText>
           </Pressable>
         </ThemedView>
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   title: {
-    fontSize: 24,
+    fontSize: 30,
   },
   contentContainer: {
     alignItems: 'center',
@@ -114,5 +114,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     textAlignVertical: 'center',
+    color: 'black',
   },
 });
