@@ -17,7 +17,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.tituloContainer}>
-        <ThemedText type="title">Bem vindo ao MikotoPlace's!</ThemedText>
+        <ThemedText type="title">Bem vindo as Terras Intermédias!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.tituloContainer}>
@@ -26,10 +26,10 @@ export default function HomeScreen() {
       <ThemedView style={styles.textoContainer}>
         <ThemedText>
           <ThemedText type="defaultSemiBold">
-          MikotoPlace's oferece a solução perfeita para centralizar o gerenciamento de suas redes sociais.
-           Conecte-se e sincronize suas contas de várias plataformas, como Facebook, Twitter, Instagram, LinkedIn e outras,
+            MikotoPlace's oferece a solução perfeita para centralizar o gerenciamento de suas redes sociais.
+            Conecte-se e sincronize suas contas de várias plataformas, como Facebook, Twitter, Instagram, LinkedIn e outras,
             simplificando a interação e visualização de suas redes em um só lugar.
-             Simplifique sua presença online com MikotoPlace's.
+            Simplifique sua presença online com MikotoPlace's.
           </ThemedText>
         </ThemedText>
       </ThemedView>
@@ -38,8 +38,8 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView style={styles.textoContainer}>
         <ThemedText>
-        Olá! Eu sou Luis Rosário e estou desenvolvendo uma nova plataforma de Redes Sociais.
-         Junte-se a nós para uma experiência online mais conectada e significativa!
+          Olá! Eu sou Luis Rosário e estou desenvolvendo uma nova plataforma de Redes Sociais.
+          Junte-se a nós para uma experiência online mais conectada e significativa!
         </ThemedText>
       </ThemedView> 
     </ParallaxScrollView>

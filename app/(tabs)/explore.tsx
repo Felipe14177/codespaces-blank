@@ -9,7 +9,7 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <Image source={require('@/assets/images/logo.jpg')} style={styles.headerImage} />
+        <Image source={require('@/assets/images/logo2.jpg')} style={styles.headerImage} />
       }
     >
       <ThemedView style={styles.titleContainer}>
@@ -47,21 +47,21 @@ export default function TabTwoScreen() {
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/5.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/duduardoajk/')}>
+          <Pressable  onPress={() => Linking.openURL('https://discord.com/channels/@me/1057518184003014697')}>
             <ThemedText>Discord</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/6.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/duduardoajk/')}>
+          <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/felipe-stebam-7b8980314/')}>
             <ThemedText>Linkedin</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/4.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://x.com/douglsapenas')}>
+          <Pressable  onPress={() => Linking.openURL('https://x.com/StebamFelipe')}>
             <ThemedText>Twiter</ThemedText>
           </Pressable>
         </ThemedView>
