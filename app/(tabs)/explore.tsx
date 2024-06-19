@@ -13,56 +13,56 @@ export default function TabTwoScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Redes sociais</ThemedText>
+        <ThemedText type="title" style={styles.title}>Redes sociais</ThemedText>
       </ThemedView>
 
       <ThemedView style={styles.contentContainer}>
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/1.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://wa.me/qr/5D2XL6JUTF74P1')}>
-            <ThemedText>Whatsapp</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://wa.me/qr/5D2XL6JUTF74P1')}>
+            <ThemedText style={styles.text}>Whatsapp</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/2.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/flpnzx_/')}>
-            <ThemedText>Instagram</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://www.instagram.com/flpnzx_/')}>
+            <ThemedText style={styles.text}>Instagram</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/3.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://github.com/Felipe14177')}>
-            <ThemedText>Github</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://github.com/Felipe14177')}>
+            <ThemedText style={styles.text}>Github</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/0.png')} style={styles.icon} />
-          <Pressable onPress={() => Linking.openURL('tel:5518998244362')}>
-            <ThemedText>Telefone</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('tel:5518998244362')}>
+            <ThemedText style={styles.text}>Telefone</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/5.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://discord.com/channels/@me/1057518184003014697')}>
-            <ThemedText>Discord</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://discord.com/channels/@me/1057518184003014697')}>
+            <ThemedText style={styles.text}>Discord</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/6.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/felipe-stebam-7b8980314/')}>
-            <ThemedText>Linkedin</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://www.linkedin.com/in/felipe-stebam-7b8980314/')}>
+            <ThemedText style={styles.text}>Linkedin</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/4.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://x.com/StebamFelipe')}>
-            <ThemedText>Twiter</ThemedText>
+          <Pressable style={styles.button} onPress={() => Linking.openURL('https://x.com/StebamFelipe')}>
+            <ThemedText style={styles.text}>Twitter</ThemedText>
           </Pressable>
         </ThemedView>
 
@@ -77,7 +77,13 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   titleContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 16,
+  },
+  title: {
+    fontSize: 24,
   },
   contentContainer: {
     alignItems: 'center',
@@ -85,20 +91,28 @@ const styles = StyleSheet.create({
   },
   redes: {
     flexDirection: 'row',
-     
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 16,
     backgroundColor: 'white',
     borderRadius: 100,
-    padding: 10
+    paddingVertical: 10,
+    paddingHorizontal: 20,
   },
   icon: {
     width: 40,
     height: 40,
     marginRight: 8,
   },
+  button: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    padding: 8,
+  },
   text: {
     fontSize: 16,
+    textAlignVertical: 'center',
   },
 });
