@@ -39,6 +39,10 @@ export default function HomeScreen() {
           Olá!! Meu nome é Felipe. Sou desenvolvedor deste aplicativo de gerenciamento de redes sociais
           e apreciador da programação e desenvolvimento para web e mobile.
         </ThemedText>
+        <Image
+          source={require("@/assets/images/foto.png")}
+          style={styles.aboutImage}
+        />
       </ThemedView> 
     </ParallaxScrollView>
   );
@@ -63,5 +67,17 @@ const styles = StyleSheet.create({
   },
   justifiedText: {
     textAlign: "justify",
+  },
+  image: {
+    width: "40%",
+    height: "40%",
+  },
+  aboutImage: {
+    width: 200,
+    height: 200,
+    marginLeft: 63,
+    borderRadius:100,
+    justifyContent:'center',
+    alignItems:'center',
   },
 });
