@@ -1,5 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, View, Pressable, Linking } from 'react-native';
+import { StyleSheet, Image, View, Pressable, Linking, } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -94,26 +94,35 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 16,
-    backgroundColor: 'white',
-    borderRadius: 100,
-    paddingVertical: 10,
+    borderRadius: 15,
+    paddingVertical: 12,
     paddingHorizontal: 20,
+    width: '80%',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+    backgroundColor: '#cccccc',
   },
+
   icon: {
-    width: 40,
-    height: 40,
-    marginRight: 8,
+    width: 32,
+    height: 32,
+    marginRight: 23,
   },
   button: {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start',
-    padding: 8,
+    justifyContent: 'center',
+    paddingVertical: 8,
   },
   text: {
-    fontSize: 16,
-    textAlignVertical: 'center',
-    color: 'black',
+    fontSize: 18,
+    color: '#333', 
+    fontWeight: 'bold',
   },
 });
