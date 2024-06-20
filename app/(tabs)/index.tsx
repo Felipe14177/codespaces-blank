@@ -11,7 +11,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
       headerImage={
         <Image
-          source={require("@/assets/images/logo.jpg")}
+          source={require("@/assets/images/logo3.jpg")}
           style={styles.reactLogo}
         />
       }
@@ -24,12 +24,10 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">Sobre o app:</ThemedText>
       </ThemedView>
       <ThemedView style={styles.textoContainer}>
-        <ThemedText>
+        <ThemedText style={styles.justifiedText}>
           <ThemedText type="defaultSemiBold">
-            MikotoPlace's oferece a solução perfeita para centralizar o gerenciamento de suas redes sociais.
-            Conecte-se e sincronize suas contas de várias plataformas, como Facebook, Twitter, Instagram, LinkedIn e outras,
-            simplificando a interação e visualização de suas redes em um só lugar.
-            Simplifique sua presença online com MikotoPlace's.
+            Esta plataforma oferece um fácil gerenciamento de redes sociais para facilitar a sua vida e economizar
+            seu tempo e esforço. Com este app, você poderá otimizar sua presença online e alcançar seu público de maneira eficiente.
           </ThemedText>
         </ThemedText>
       </ThemedView>
@@ -37,9 +35,9 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">Sobre mim:</ThemedText>
       </ThemedView>
       <ThemedView style={styles.textoContainer}>
-        <ThemedText>
-          Olá! Eu sou Luis Rosário e estou desenvolvendo uma nova plataforma de Redes Sociais.
-          Junte-se a nós para uma experiência online mais conectada e significativa!
+        <ThemedText style={styles.justifiedText}>
+          Olá!! Meu nome é Felipe. Sou desenvolvedor deste aplicativo de gerenciamento de redes sociais
+          e apreciador da programação e desenvolvimento para web e mobile.
         </ThemedText>
       </ThemedView> 
     </ParallaxScrollView>
@@ -62,5 +60,8 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: "absolute",
+  },
+  justifiedText: {
+    textAlign: "justify",
   },
 });

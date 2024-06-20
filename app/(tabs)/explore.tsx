@@ -62,7 +62,7 @@ export default function TabTwoScreen() {
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/4.png')} style={styles.icon} />
           <Pressable style={styles.button} onPress={() => Linking.openURL('https://x.com/StebamFelipe')}>
-            <ThemedText style={styles.text}>Twitter</ThemedText>
+            <ThemedText style={styles.text}>Twitter (X)</ThemedText>
           </Pressable>
         </ThemedView>
 
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   title: {
-    fontSize: 30,
+    fontSize: 35,
   },
   contentContainer: {
     alignItems: 'center',
